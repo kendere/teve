@@ -1,11 +1,24 @@
 body {
-    background-color: rgb(228, 225, 223);
+    background-color: rgba(132, 91, 61, 0.86);
+}
+
+.flex-container {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cash {
+    flex: 1 1 100%;
+    max-width: 45%;
+
     h2 {
-        padding: 20px;
-        background-color: rgb(220, 226, 231);
+        padding-top: 3%;
+        text-align: center;
+        font-size: 2rem;
+        color: #e6ab09;
+        text-shadow: 3px 3px 2px var(--text_shadow_h1);;
     }
     
     table  {
@@ -22,7 +35,8 @@ body {
     }
     
     td {
-        border-bottom: 3px solid rgb(212, 207, 207);
+        border-bottom: 3px solid rgb(150, 56, 56);
+        max-width: 200px;
     }
     
     td:first-child, th:first-child {
@@ -35,5 +49,11 @@ body {
     
     td:last-of-type::after {
         content: ' RP';
+    }
+}
+
+@media (max-width: 768px) {
+    .cash {
+        max-width: 100%;
     }
 }
