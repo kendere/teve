@@ -1,5 +1,9 @@
 body {
     background-color: rgba(132, 91, 61, 0.86);
+    background-image: url("../images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
 }
 
 .flex-container {
@@ -7,9 +11,15 @@ body {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.cash {
+.flex-item {
+
+    background-color: #ad8359;
+    border-radius: 30px;
+    border: 5px solid var(--active_background);
+
     flex: 1 1 100%;
     max-width: 45%;
 
@@ -29,7 +39,7 @@ body {
         padding: 10px;
         border-collapse: collapse;
     }
-    
+
     th {
         border-bottom: 2px solid rgb(0, 0, 0);
     }
@@ -50,10 +60,26 @@ body {
     td:last-of-type::after {
         content: ' RP';
     }
+
+    strong {
+        color: #893b3b;
+        font-size: 1.3em;
+        text-shadow: 1px 1px 1px var(--text_shadow_color);
+    }
+    
+    p {
+        color:rgb(1, 12, 9)
+    }
 }
 
 @media (max-width: 768px) {
-    .cash {
+    .flex-container{
+        margin-top: 0px;
+        gap: 0px;
+    }
+    .flex-item {
+        border: 0px;
         max-width: 100%;
+        border-radius: 0px
     }
 }
