@@ -1,0 +1,60 @@
+footer
+{
+    font: 1.5rem 'Roboto', sans-serif;
+    background-color: black;
+}
+.flex-footer {
+
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.flex-footer-item {
+    flex: 1 1 100%;
+    max-width: 30%;
+
+    color: white;
+
+    a {
+        color: rgb(83, 126, 206);
+        text-decoration: none;
+    }
+
+   h2::before {
+        content: "|";
+        color: rgb(83, 126, 206);
+        font-size: 1.1em;
+    }
+
+    li:nth-child(1) {
+        list-style-type: "𓀀 ";
+    }
+    li:nth-child(2) {
+        list-style-type: "𓀁 ";
+    }
+    li:nth-child(3) {
+        list-style-type: "𓀂 ";
+    }
+    li:nth-child(4) {
+        list-style-type: "𓀃 ";
+    }
+    li:nth-child(5) {
+        list-style-type: "𓀄 ";
+    }
+}
+
+.copy {
+    color: white;
+
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .flex-footer-item {
+        max-width: 100%;
+    }
+}
